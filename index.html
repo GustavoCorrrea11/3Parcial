@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 1 - Dibujado inicial</title>
+  <script type="module" src="./src/app.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <div id="backBtn">Return</div>
+  <!-- video1 -->
+  <video autoplay loop id="video1">
+    <source src="./assets/VideoKratos.mp4">
+  </video>
+  <!-- video2 -->
+  <video autoplay loop id="video2">
+    <source src="./assets/VideoGTA.mp4">
+  </video>
+  <!-- video3 -->
+  <video autoplay loop id="video3">
+    <source src="./assets/VideoSonic.mp4">
+  </video>
+
+  <div id="content">
+    <img src="./assets/Imagenes/Kratos.jpg" class="imagen-modeloC1">
+    <img src="./assets/Imagenes/Pespsi.jpg" class="imagen-modeloC2">
+    <img src="./assets/Imagenes/CJ.jpg" class="imagen-modeloC3">
+    <img src="./assets/Imagenes/Play2png.png" class="imagen-modeloC4">
+    <img src="./assets/Imagenes/Play2png.png" class="imagen-modeloC5">
+  
+  
+    <!-- boton ver -->
+    <div class="btnOption small" data-size="10">
+      <div class="title">VER</div>
+    </div>
+  </div>
+  
+  
+  <script type="module">
+    
+    const options = document.querySelectorAll('.btnOption');
+    const backBtn = document.querySelector('#backBtn');
+    
+    
+
+    options.forEach(optionSelected => {
+      optionSelected.onclick = function(){
+        
+        toogleContent();
+        
+      }
+    });
+
+    backBtn.onclick = function(){
+      toogleContent();
+      
+    }
+
+    function toogleContent (){
+      content.style.display = content.style.display == 'none' ? 'flex' : 'none';
+    }
+
+    
+  </script>
+</body>
+
+</html>

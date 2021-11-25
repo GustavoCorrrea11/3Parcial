@@ -1,0 +1,130 @@
+* {
+    /* Qué es el BOX MODEL? */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: white;
+    overflow: hidden;
+  }
+  body #content {
+    display: flex;
+    position: fixed;
+    background-color: black;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  
+  body #content .btnOption {
+    position: absolute;
+    border: 2px solid #ecf0f1;
+    width: 15vw;
+    height: 10vh;
+    margin: 1vw;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+    left: 41.5vw;
+    margin-bottom: 45vw;
+    
+  }
+  
+  body #content .btnOption:hover {
+    background:gray;
+    width: 15vw;
+    color: black;
+  }
+  
+  body #backBtn {
+    position: absolute;
+    border: 5px solid black;
+    width: 10vw;
+    height: 8vh;
+    margin: 10vw;
+    margin-bottom: 55vw;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    background: gray;
+    right: 78vw;
+  }
+  
+  body #backBtn:hover {
+    width: 12vw;
+    
+    background: indigo;
+  }
+  
+  #speed {
+    color: white;
+    font-size: 120%;
+  }
+  
+  #video1{
+    display: none;
+  } 
+  
+  #video2{
+    display: none;
+  } 
+  
+  #video3{
+    display: none;
+  } 
+  
+  .imagen-modeloC1{
+    position: absolute;
+    width: 30vw;
+    right: 70vw;
+    margin-bottom: 5vw;
+  
+  }
+  .imagen-modeloC2{
+    position: absolute;
+    width: 30vw;
+    right: 35.5vw;
+    margin-bottom: 5vw;
+  
+  }
+  .imagen-modeloC3{
+    position: absolute;
+    width: 30vw;
+    right: 1vw;
+    margin-bottom: 5vw;
+  }
+  
+  .imagen-modeloC4{
+    position: absolute;
+    width: 5vw;
+    right: 31vw;
+    margin-bottom: 5vw;
+    z-index: -1;
+  }
+  
+  .imagen-modeloC5{
+    position: absolute;
+    width: 5vw;
+    right: 65vw;
+    margin-bottom: 5vw;
+    z-index: -1;
+  }
